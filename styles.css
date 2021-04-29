@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    margin-top: -20px;
+    padding: 0px;
+
+}
+.Home{
+    
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    height: 70vh;
+}
+.start{
+    color: #fff;
+    background: #362a94;
+    align-self: center;
+    margin-left: 47vw;
+    width: 120px;
+    border-color: transparent;
+    border-radius: 20px;
+    margin-top: 5vh;
+    animation: forwards 1.5s ease change2;
+}
+
+.start:hover
+{
+    animation: forwards 1.5s ease change ;
+    -webkit-animation: forwards 1s ease change;
+
+}
+.text{
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+    font-size: 32px;
+    color: white;
+    padding-top: 10vh;
+    animation: forwards 1s ease pop  ;
+    text-decoration: underline;
+
+}
+.Voice-text{
+  text-align: center;
+  font-size: 42px;
+  font-family: 'Zen Dots', cursive;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: underline;
+  padding-top: 10vh;
+  animation: forwards 1s ease pop;
+
+}
+.Voice{
+   margin-top: -8vh;
+   background-image: linear-gradient(120deg, #6a11cb 0%,#5692fa 100%, #a258f1 50%);
+   
+}
+.sub-text{
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+ 
+}
+.intro{
+    text-align: center;
+    margin-top: 0vh;
+    color: white;
+    font-weight: 300;
+    animation: forwards 1s ease pop;
+}
+@keyframes change{
+    from{background: #362a94;}
+    to{background-color: rgb(70, 138, 216);}
+}
+@keyframes change2{
+    from{background-color: rgb(70, 138, 216);}
+    to{background: #362a94}
+}
+@keyframes pop{
+    from{opacity: 0;padding-top: 12vh;}
+    to{opacity: 1;padding-top: 10vh;}
+}

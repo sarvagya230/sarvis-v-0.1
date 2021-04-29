@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./478-4782685_iron-man-jarvis-marvel-png-download-jarvis-iron.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvis</title>
+    <link rel="icon" href="./478-4782685_iron-man-jarvis-marvel-png-download-jarvis-iron.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js" integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ==" crossorigin="anonymous"></script>
+</head>
+<script src="index.js"></script>
+<body onload="typeWriter()">
+    <script>
+        var i = 0;
+        var txt = 'Sustainable advance robotic voice activated intelligent species';
+        var speed = 50;
+        let done =false
+
+    
+        function typeWriter() {
+            setTimeout(()=>{           if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+            
+  }
+           }, 1);
+           
+
+ 
+         
+        }
+        </script>
+    <div class="Home" >
+        <h1 class="text">Sarvis</h1>
+        <h3 class="sub-text" id="demo"></h3>
+        <h2 class="intro">Sarvis is an voice acitivated AI based over Web speech api and Tenserflow.js<br>Built by Sarvagya singh and is currently under MIT licence <br><br></h1>
+
+    </div>
+    <div class="Voice" id="voice">
+        <script>
+            function setup() {
+           let ctx=createCanvas(60,69);
+           ctx.style('width','50vw')
+           ctx.style('height','-50vh')
+           ctx.style('margin-left','40vw')
+         }
+         
+         function draw() {
+           background(0);
+        
+         }
+         </script>
+
+<h1 class="Voice-text">Speech recognition</h1>
+
+
+<button class="start" id="start" > Start </button>    
+
+<img src="./undraw_Chat_bot_re_e2gj 1.svg" style="width: 50vw;height: 50vh;margin-top: 50vh;margin-left: 20vw;" >
+</div>
+    
+</body>
+</html>
